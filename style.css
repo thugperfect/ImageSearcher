@@ -2,6 +2,7 @@
 body{
     margin: 0%;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .body{
@@ -54,7 +55,7 @@ input{
     justify-content: center;
     align-items: center;
 }
-.output{
+/* .output{
     width: auto;
 
     justify-content: center;
@@ -63,20 +64,52 @@ input{
     
  
 
-}
-.imgbox{
+} */
+/* .imgbox{
     width: 300px;
-    height: 250px;
-    box-shadow: 0 0 6px rgb(0,0,0,0.2 );
+  
+
     margin: 5px;
     
-}
+} */
 img{
     width: 100%;
+    
   
 
 }
-.imgtxt{
+
+/* .output > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.output{
+    width:  100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.output .wide{
+    grid-column: span 2;
+}
+.output .tall{
+    grid-row: span 2;
+}
+.output .big{
+    grid-column: span 2;
+    grid-row: span 2;
+} */
+/* .imgtxt{
     font-weight: 600;
     font-size: larger;
     display: flex;
@@ -87,22 +120,39 @@ img{
     display: none;
 }
 
-.row {
-    display: -ms-flexbox; /* IE 10 */
+ .output {
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE 10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
-  /* Create two equal columns that sits next to each other */
-  .column {
-    -ms-flex: 50%; /* IE 10 */
-    flex: 50%;
+  
+  .imgbox {
+    -ms-flex: 25%; 
+    flex: 25%;
     padding: 0 4px;
   }
   
-  .column img {
+  .imgbox img {
     margin-top: 8px;
     vertical-align: middle;
+    object-fit: cover;
+  }  */
+  .output {
+    column-count: 4; /* Adjust the number of columns as needed */
+    column-gap: 10px;
+  }
+  
+  .imgbox {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
