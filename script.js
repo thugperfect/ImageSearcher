@@ -63,3 +63,22 @@ form.addEventListener("submit",(event)=>{
 load.addEventListener("click",()=>{
     search()
 })
+
+function darkmode(f){
+  let dark = document.getElementById("dark")
+  let body = document.getElementById("body")
+
+  if(f === 0){
+    dark.setAttribute("onclick","darkmode(1)")
+    body.style.backgroundColor="black"
+    dark.style.backgroundColor ="white"
+    dark.style.color = "black"
+  }
+  if(f === 1){
+    dark.setAttribute("onclick","darkmode(0)")
+    body.style.backgroundColor="white"
+    dark.style.backgroundColor="black"
+    dark.style.color = "white"
+  }
+
+}
