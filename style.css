@@ -87,11 +87,29 @@ img{
     height: 40px;
     font-weight: 900;
     font-size: 20px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    position: sticky;
+    top: 10px;
+    left: 1470px;
+    
     border-radius: 100%;
     background-color: black;
     color: white;
 
+  }
+
+  @media(max-width:1200px){
+    .output{
+        column-count: 3
+    }
+  }
+
+  @media(max-width:800px){
+    .output{
+        column-count: 2
+    }
+  }
+  @media(max-width:500px){
+    .output{
+        column-count: 1
+    }
   }

@@ -67,18 +67,22 @@ load.addEventListener("click",()=>{
 function darkmode(f){
   let dark = document.getElementById("dark")
   let body = document.getElementById("body")
+  let h1 = document.getElementById("h1")
 
   if(f === 0){
     dark.setAttribute("onclick","darkmode(1)")
     body.style.backgroundColor="black"
     dark.style.backgroundColor ="white"
     dark.style.color = "black"
+    h1.style.color="white"
   }
   if(f === 1){
     dark.setAttribute("onclick","darkmode(0)")
     body.style.backgroundColor="white"
     dark.style.backgroundColor="black"
     dark.style.color = "white"
+    h1.style.color="black"
+
   }
 
 }
