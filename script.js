@@ -82,3 +82,13 @@ function darkmode(f){
   }
 
 }
+let dark = document.getElementById("dark")
+let count = 0;
+dark.addEventListener("click",()=>{
+  count+=1;
+  if(count === 10){
+    alert("FUCK! ,STOP")
+    count =0
+  }
+
+})
