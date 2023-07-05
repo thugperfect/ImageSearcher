@@ -62,6 +62,9 @@ img{
   
 
 }
+#load{
+    display: none;
+}
 
   .output {
     column-count: 4;
