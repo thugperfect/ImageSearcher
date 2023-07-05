@@ -1,0 +1,108 @@
+
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+.body{
+    width: 100%;
+ 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inp{
+    display: flex;
+
+
+}
+.minp{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbtn{
+    background-color: rgb(29, 223, 29);
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 6px rgb(0,0,0,0.2 );
+
+}
+input{
+    border: none;
+    margin-right: 20px;
+    height: 30px;
+    box-shadow: 0 0 6px rgb(0,0,0,0.2 );
+    border-radius: 5px;
+    outline: none;
+}
+#searchinp{
+    width:200px;
+    font-size: 100%;
+}
+.moutput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output{
+    width: auto;
+
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+ 
+
+}
+.imgbox{
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 0 6px rgb(0,0,0,0.2 );
+    margin: 5px;
+    
+}
+img{
+    width: 100%;
+  
+
+}
+.imgtxt{
+    font-weight: 600;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+#load{
+    display: none;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
