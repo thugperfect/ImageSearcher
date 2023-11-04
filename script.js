@@ -7,9 +7,9 @@ const out = document.querySelector(".output")
 const load = document.getElementById("load")
 
 let page = 1
-let inputData = ""
+let inputData = "hi"
 async function search() {
-    inputData = input.value;
+    inputData = input.value || "hi";
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
     
     try {
@@ -47,7 +47,7 @@ async function search() {
           load.style.display = "block";
         }
       } else {
-        console.log("No results found");
+        load.innerHTML = "No results found"
       }
     } catch (error) {
       console.log("An error occurred:", error);
@@ -59,7 +59,7 @@ form.addEventListener("submit",(event)=>{
     page=1
     search()
 })
-
+search()
 load.addEventListener("click",()=>{
     search()
 })
